@@ -1,34 +1,3 @@
-// ===== Efeito de digitação =====
-const roles = [
-  "Policial Penal",
-  "Instrutor de Prática de Serviço Penitenciário",
-  "Tecnólogo em Cibersegurança",
-  "Pós-graduando em Soluções de IA",
-  "Estudante de Pedagogia",
-];
-const typingEl = document.getElementById("typing");
-let roleIndex = 0;
-let charIndex = 0;
-let deleting = false;
-
-function type() {
-  const current = roles[roleIndex];
-  typingEl.textContent = current.slice(0, charIndex);
-
-  if (!deleting && charIndex < current.length) {
-    charIndex++;
-    setTimeout(type, 70);
-  } else if (deleting && charIndex > 0) {
-    charIndex--;
-    setTimeout(type, 35);
-  } else {
-    deleting = !deleting;
-    if (!deleting) roleIndex = (roleIndex + 1) % roles.length;
-    setTimeout(type, deleting ? 1800 : 300);
-  }
-}
-type();
-
 // ===== Foto: mostra ícone caso a imagem não exista =====
 const photo = document.getElementById("profilePhoto");
 function photoFailed() {
@@ -106,28 +75,6 @@ document.querySelectorAll(".reveal").forEach((el, i) => {
   el.style.transitionDelay = `${(i % 3) * 60}ms`;
   observer.observe(el);
 });
-
-// ===== Filtro de projetos =====
-const filterBtns = document.querySelectorAll(".filter-btn");
-const projects = document.querySelectorAll(".project-card");
-
-filterBtns.forEach((btn) =>
-  btn.addEventListener("click", () => {
-    filterBtns.forEach((b) => b.classList.remove("active"));
-    btn.classList.add("active");
-    const filter = btn.dataset.filter;
-
-    projects.forEach((card) => {
-      const show = filter === "all" || card.dataset.category === filter;
-      card.classList.toggle("hide", !show);
-      if (show) {
-        card.classList.remove("pop");
-        void card.offsetWidth;
-        card.classList.add("pop");
-      }
-    });
-  })
-);
 
 // ===== Baixar PDF (impressão) e ano no rodapé =====
 document.querySelectorAll(".js-print").forEach((btn) => btn.addEventListener("click", () => window.print()));
