@@ -1,0 +1,709 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#0B0F19" />
+  <title>Rodrigo Donizetti Tricanico | Segurança, Educação e Tecnologia</title>
+  <meta name="description" content="Rodrigo Donizetti Tricanico — Policial Penal, instrutor no CECEP, tecnólogo em Cibersegurança e pós-graduando em Soluções de IA. Mais de 20 anos de serviço público." />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500;600&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="scroll-progress" id="scrollProgress"></div>
+  <div class="bg-ambient" aria-hidden="true"></div>
+
+  <!-- NAVBAR -->
+  <header class="navbar" id="navbar">
+    <div class="container navbar-inner">
+      <a href="#inicio" class="brand">
+        <span class="brand-mark">RT</span>
+        <span class="brand-text">
+          <strong>Rodrigo Tricanico</strong>
+          <small>Policial Penal &amp; Instrutor</small>
+        </span>
+      </a>
+
+      <nav class="nav-links" id="navLinks">
+        <a href="#servicos"><i class="fa-solid fa-handshake-angle"></i>Como ajudo</a>
+        <a href="#sobre"><i class="fa-solid fa-user"></i>Sobre</a>
+        <a href="#experiencia"><i class="fa-solid fa-briefcase"></i>Trajetória</a>
+        <a href="#formacao"><i class="fa-solid fa-graduation-cap"></i>Formação</a>
+        <a href="#projetos"><i class="fa-solid fa-diagram-project"></i>Projetos</a>
+        <a href="#faq"><i class="fa-solid fa-circle-question"></i>FAQ</a>
+      </nav>
+
+      <div class="nav-actions">
+        <button class="icon-btn js-print" title="Baixar currículo em PDF" aria-label="Baixar currículo em PDF">
+          <i class="fa-solid fa-download"></i>
+        </button>
+        <a href="#contato" class="btn btn-primary btn-sm">
+          <i class="fa-solid fa-paper-plane"></i><span>Fale comigo</span>
+        </a>
+        <button class="icon-btn menu-btn" id="menuBtn" aria-label="Abrir menu" aria-expanded="false">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- 1. HERO — PROPOSTA DE VALOR -->
+    <section class="hero" id="inicio">
+      <div class="container hero-grid">
+        <div class="hero-copy reveal">
+          <div class="chip-row">
+            <span class="chip chip-label chip-cyan">Policial Penal</span>
+            <span class="chip chip-label">Docente CECEP</span>
+            <span class="chip chip-label chip-blue">Jundiaí / SP</span>
+          </div>
+
+          <p class="hero-kicker">Olá, eu sou <strong>Rodrigo Donizetti Tricanico</strong></p>
+          <h1>Mais de 20 anos protegendo, liderando e <span class="accent">formando pessoas.</span></h1>
+          <p class="role"><span class="prompt">&gt;</span> <span id="typing"></span><span class="caret"></span></p>
+
+          <p class="lead">
+            Uno a experiência de campo em segurança pública à formação em Cibersegurança,
+            Inteligência Artificial e Pedagogia para capacitar equipes e liderar com segurança.
+          </p>
+
+          <div class="hero-actions">
+            <a href="https://wa.me/5511972302899" target="_blank" rel="noopener" class="btn btn-primary"><i class="fa-brands fa-whatsapp"></i> Fale comigo</a>
+            <a href="#servicos" class="btn btn-secondary"><i class="fa-solid fa-handshake-angle"></i> Como posso ajudar</a>
+            <div class="socials">
+              <a href="https://linkedin.com/" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+              <a href="https://github.com/" target="_blank" rel="noopener" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+              <a href="https://instagram.com/" target="_blank" rel="noopener" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+            </div>
+          </div>
+
+          <div class="metrics">
+            <div class="metric"><strong>20+</strong><span>Anos de serviço público</span></div>
+            <div class="metric"><strong>4</strong><span>Funções exercidas</span></div>
+            <div class="metric"><strong>3</strong><span>Cursos superiores</span></div>
+            <div class="metric"><strong>2</strong><span>Idiomas</span></div>
+          </div>
+        </div>
+
+        <div class="hero-visual reveal">
+          <div class="photo-frame">
+            <div class="photo-inner">
+              <img src="foto.jpeg%2001.jpeg" alt="Foto de Rodrigo Donizetti Tricanico" id="profilePhoto" />
+            </div>
+            <div class="photo-fallback"><i class="fa-solid fa-user-tie"></i></div>
+
+            <div class="float-card float-card-top">
+              <div class="icon-box icon-box-sm"><i class="fa-solid fa-chalkboard-user"></i></div>
+              <div><strong>Docente</strong><span>CECEP · desde 2025</span></div>
+            </div>
+            <div class="float-card float-card-bottom">
+              <div class="icon-box icon-box-sm"><i class="fa-solid fa-brain"></i></div>
+              <div><strong>IA &amp; Cibersegurança</strong><span>Formação contínua</span></div>
+            </div>
+          </div>
+          <span class="status-badge"><span class="pulse-dot"></span> Disponível para contato</span>
+        </div>
+      </div>
+
+      <a href="#servicos" class="scroll-cue" aria-label="Rolar para a próxima seção">
+        <span class="mouse"><span></span></span>
+        <span class="label-caps">Role para conhecer</span>
+      </a>
+    </section>
+
+    <!-- 2. PROVA SOCIAL — INSTITUIÇÕES -->
+    <div class="trust" aria-label="Instituições na trajetória">
+      <div class="container trust-inner">
+        <span class="label-caps">Instituições na trajetória</span>
+        <ul class="trust-list">
+          <li><i class="fa-solid fa-building-shield"></i> SAP-SP</li>
+          <li><i class="fa-solid fa-building-columns"></i> CECEP</li>
+          <li><i class="fa-solid fa-hands-holding-child"></i> FEBEM</li>
+          <li><i class="fa-solid fa-graduation-cap"></i> Faculdade Anhanguera</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- 3. COMO POSSO AJUDAR -->
+    <section class="section" id="servicos">
+      <div class="container">
+        <div class="section-head center reveal">
+          <span class="eyebrow">// Como posso ajudar</span>
+          <h2>Experiência de campo a serviço da sua equipe</h2>
+          <p>Três frentes em que minha trajetória gera resultado direto.</p>
+        </div>
+
+        <div class="grid grid-3">
+          <article class="card service-card reveal">
+            <div class="icon-box"><i class="fa-solid fa-chalkboard-user"></i></div>
+            <h3>Treinamento &amp; Capacitação</h3>
+            <p>Formação de servidores e equipes com base na prática real do serviço penitenciário.</p>
+            <ul class="bullets">
+              <li>Instrução em Prática de Serviço Penitenciário</li>
+              <li>Capacitação de novos servidores</li>
+              <li>Didática apoiada na Pedagogia</li>
+            </ul>
+            <a href="#contato" class="link-ghost service-link">quero saber mais <span class="arrow">-&gt;</span></a>
+          </article>
+
+          <article class="card service-card reveal">
+            <div class="icon-box"><i class="fa-solid fa-user-shield"></i></div>
+            <h3>Gestão de Segurança</h3>
+            <p>Liderança testada em mais de 20 anos de segurança pública e na direção de núcleo.</p>
+            <ul class="bullets">
+              <li>Planejamento operacional</li>
+              <li>Gestão de equipes e disciplina</li>
+              <li>Tomada de decisão em situações críticas</li>
+            </ul>
+            <a href="#contato" class="link-ghost service-link">quero saber mais <span class="arrow">-&gt;</span></a>
+          </article>
+
+          <article class="card service-card reveal">
+            <div class="icon-box"><i class="fa-solid fa-microchip"></i></div>
+            <h3>Tecnologia &amp; IA</h3>
+            <p>Visão de segurança da informação e uso estratégico de Inteligência Artificial.</p>
+            <ul class="bullets">
+              <li>Fundamentos de Cibersegurança</li>
+              <li>Estratégia de soluções com IA</li>
+              <li>Ponte entre operação e tecnologia</li>
+            </ul>
+            <a href="#contato" class="link-ghost service-link">quero saber mais <span class="arrow">-&gt;</span></a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- 4. SOBRE / DIFERENCIAIS -->
+    <section class="section" id="sobre">
+      <div class="container">
+        <div class="section-head reveal">
+          <div>
+            <span class="eyebrow">// Por que eu</span>
+            <h2>Segurança, educação e tecnologia</h2>
+          </div>
+          <p>Uma combinação rara: vivência operacional, docência e formação técnica.</p>
+        </div>
+
+        <div class="about-grid">
+          <div class="pillars">
+            <article class="card pillar reveal">
+              <div class="icon-box"><i class="fa-solid fa-award"></i></div>
+              <div>
+                <h3>Vivência real, não só teoria</h3>
+                <p>Mais de 20 anos em segurança pública, da FEBEM à direção do Núcleo de Segurança e Disciplina da SAP-SP.</p>
+              </div>
+            </article>
+            <article class="card pillar reveal">
+              <div class="icon-box"><i class="fa-solid fa-people-group"></i></div>
+              <div>
+                <h3>Quem forma pessoas</h3>
+                <p>Instrutor no CECEP e licenciando em Pedagogia: sei transformar experiência em aprendizado.</p>
+              </div>
+            </article>
+            <article class="card pillar reveal">
+              <div class="icon-box"><i class="fa-solid fa-arrow-trend-up"></i></div>
+              <div>
+                <h3>Em formação contínua</h3>
+                <p>Tecnólogo em Cibersegurança e pós-graduando em Estratégia e Desenvolvimento de Soluções de IA.</p>
+              </div>
+            </article>
+          </div>
+
+          <section class="terminal reveal" aria-label="Resumo do perfil">
+            <div class="terminal-bar">
+              <div class="terminal-dots" aria-hidden="true"><span></span><span></span><span></span></div>
+              <span class="terminal-title">bash ~ rodrigo@curriculo</span>
+              <span class="terminal-meta"><i class="fa-solid fa-lock"></i> somente-leitura</span>
+            </div>
+<pre class="terminal-body"><span class="t-prompt">❯</span> <span class="t-cmd">rodrigo --perfil --json</span>
+<span class="t-brace">{</span>
+  <span class="t-key">"nome"</span>: <span class="t-str">"Rodrigo Donizetti Tricanico"</span>,
+  <span class="t-key">"cargo_atual"</span>: <span class="t-str">"Policial Penal — SAP-SP"</span>,
+  <span class="t-key">"docencia"</span>: <span class="t-str">"Instrutor de Prática de Serviço Penitenciário (CECEP)"</span>,
+  <span class="t-key">"experiencia"</span>: <span class="t-str">"20+ anos de serviço público"</span>,
+  <span class="t-key">"formacao"</span>: [
+    <span class="t-arr">"Pós-Graduação em Soluções de IA (em andamento)"</span>,
+    <span class="t-arr">"Tecnólogo em Cibersegurança"</span>,
+    <span class="t-arr">"Licenciatura em Pedagogia (em andamento)"</span>
+  ],
+  <span class="t-key">"localizacao"</span>: <span class="t-str">"Jundiaí/SP"</span>,
+  <span class="t-key">"status"</span>: <span class="t-ok">"EM_FORMACAO_CONTINUA"</span>
+<span class="t-brace">}</span>
+<span class="t-prompt">❯</span> <span class="caret"></span></pre>
+          </section>
+        </div>
+      </div>
+    </section>
+
+    <!-- 5. TRAJETÓRIA PROFISSIONAL -->
+    <section class="section" id="experiencia">
+      <div class="container">
+        <div class="section-head reveal">
+          <div>
+            <span class="eyebrow">// Trajetória profissional</span>
+            <h2>Experiência Profissional</h2>
+          </div>
+          <p>Mais de 20 anos dedicados à segurança pública.</p>
+        </div>
+
+        <div class="timeline">
+          <article class="timeline-item current reveal">
+            <span class="timeline-node" aria-hidden="true"></span>
+            <div class="card">
+              <header class="role-head">
+                <div class="icon-box"><i class="fa-solid fa-chalkboard-user"></i></div>
+                <div class="role-title">
+                  <h3>Docente / Instrutor</h3>
+                  <p class="org"><i class="fa-solid fa-building-columns"></i> Coordenadoria de Ensino, Cultura e Pesquisa (CECEP)</p>
+                </div>
+                <span class="chip chip-cyan">Jan 2025 — Atual</span>
+              </header>
+              <ul class="bullets">
+                <li>Instrutor da disciplina Prática de Serviço Penitenciário.</li>
+                <li>Atuação na formação e capacitação de novos servidores.</li>
+              </ul>
+              <div class="tags"><span>Docência</span><span>Capacitação</span><span>Formação de Servidores</span></div>
+            </div>
+          </article>
+
+          <article class="timeline-item past reveal">
+            <span class="timeline-node" aria-hidden="true"></span>
+            <div class="card">
+              <header class="role-head">
+                <div class="icon-box"><i class="fa-solid fa-user-shield"></i></div>
+                <div class="role-title">
+                  <h3>Diretor de Núcleo de Segurança e Disciplina</h3>
+                  <p class="org"><i class="fa-solid fa-building-columns"></i> Secretaria da Administração Penitenciária (SAP-SP)</p>
+                </div>
+                <span class="chip">Mai 2021 — Ago 2025</span>
+              </header>
+              <ul class="bullets">
+                <li>Coordenação das atividades de segurança, controle interno e disciplina da unidade prisional.</li>
+                <li>Gestão de equipes, planejamento operacional e tomada de decisões em situações críticas.</li>
+                <li>Substituição do Diretor do Centro de Segurança e Disciplina em férias, afastamentos e ausências.</li>
+              </ul>
+              <div class="tags"><span>Liderança</span><span>Gestão de Equipes</span><span>Planejamento Operacional</span></div>
+            </div>
+          </article>
+
+          <article class="timeline-item current reveal">
+            <span class="timeline-node" aria-hidden="true"></span>
+            <div class="card">
+              <header class="role-head">
+                <div class="icon-box"><i class="fa-solid fa-shield-halved"></i></div>
+                <div class="role-title">
+                  <h3>Policial Penal <small>(antigo Agente de Segurança Penitenciária)</small></h3>
+                  <p class="org"><i class="fa-solid fa-building-columns"></i> Secretaria da Administração Penitenciária (SAP-SP)</p>
+                </div>
+                <span class="chip chip-cyan">2014 — Atual</span>
+              </header>
+              <ul class="bullets">
+                <li>Segurança, custódia e vigilância de pessoas privadas de liberdade.</li>
+                <li>Cumprimento de normas institucionais.</li>
+                <li>Preservação da ordem e da segurança da unidade prisional.</li>
+              </ul>
+              <div class="tags"><span>Segurança</span><span>Custódia</span><span>Vigilância</span></div>
+            </div>
+          </article>
+
+          <article class="timeline-item past reveal">
+            <span class="timeline-node" aria-hidden="true"></span>
+            <div class="card">
+              <header class="role-head">
+                <div class="icon-box"><i class="fa-solid fa-hands-holding-child"></i></div>
+                <div class="role-title">
+                  <h3>Agente de Segurança Socioeducativa</h3>
+                  <p class="org"><i class="fa-solid fa-building-columns"></i> Fundação Estadual para o Bem-Estar do Menor (FEBEM)</p>
+                </div>
+                <span class="chip">2003 — 2014</span>
+              </header>
+              <ul class="bullets">
+                <li>Segurança, disciplina e integridade dos internos.</li>
+                <li>Execução de medidas socioeducativas e controle institucional.</li>
+                <li>Gerenciamento de situações de crise e manutenção da ordem.</li>
+              </ul>
+              <div class="tags"><span>Medidas Socioeducativas</span><span>Gestão de Crises</span><span>Disciplina</span></div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA INTERMEDIÁRIO -->
+    <div class="container">
+      <aside class="cta-band reveal" aria-label="Chamada para contato">
+        <div>
+          <span class="eyebrow">// Próximo passo</span>
+          <h2>Precisa de alguém que una prática, ensino e tecnologia?</h2>
+          <p>Vamos conversar sobre como minha experiência pode contribuir com o seu projeto ou equipe.</p>
+        </div>
+        <div class="cta-band-actions">
+          <a href="https://wa.me/5511972302899" target="_blank" rel="noopener" class="btn btn-primary"><i class="fa-brands fa-whatsapp"></i> Chamar no WhatsApp</a>
+          <button class="btn btn-secondary js-print"><i class="fa-solid fa-file-arrow-down"></i> Baixar currículo</button>
+        </div>
+      </aside>
+    </div>
+
+    <!-- 6. FORMAÇÃO + IDIOMAS -->
+    <section class="section" id="formacao">
+      <div class="container">
+        <div class="section-head reveal">
+          <div>
+            <span class="eyebrow">// Qualificação</span>
+            <h2>Formação Acadêmica</h2>
+          </div>
+          <p>Base de conhecimento e qualificação contínua.</p>
+        </div>
+
+        <div class="grid grid-2">
+          <article class="card edu-card reveal">
+            <div class="edu-head">
+              <div class="icon-box"><i class="fa-solid fa-brain"></i></div>
+              <span class="chip chip-label chip-cyan"><span class="pulse-dot"></span> Cursando</span>
+            </div>
+            <div class="meta-row"><span class="label-caps">Especialização</span><span class="mono-muted">Em andamento</span></div>
+            <h3>Pós-Graduação em Estratégia e Desenvolvimento de Soluções de IA</h3>
+            <p>Estratégia, planejamento e desenvolvimento de soluções baseadas em Inteligência Artificial.</p>
+          </article>
+
+          <article class="card edu-card reveal">
+            <div class="edu-head">
+              <div class="icon-box"><i class="fa-solid fa-user-lock"></i></div>
+              <span class="chip chip-label chip-blue"><i class="fa-solid fa-check"></i> Concluído</span>
+            </div>
+            <div class="meta-row"><span class="label-caps">Faculdade Anhanguera</span><span class="mono-muted">Concluído em jun 2026</span></div>
+            <h3>Tecnólogo em Cibersegurança</h3>
+            <p>Ensino superior completo.</p>
+          </article>
+
+          <article class="card edu-card reveal">
+            <div class="edu-head">
+              <div class="icon-box"><i class="fa-solid fa-book-open-reader"></i></div>
+              <span class="chip chip-label chip-cyan"><span class="pulse-dot"></span> Cursando</span>
+            </div>
+            <div class="meta-row"><span class="label-caps">Faculdade Anhanguera</span><span class="mono-muted">Em andamento</span></div>
+            <h3>Licenciatura em Pedagogia</h3>
+            <p>Segunda formação superior, cursando o 4º de 8 semestres.</p>
+            <div class="progress" aria-label="4 de 8 semestres">
+              <div class="progress-head"><span>Progresso</span><span>4 / 8 semestres</span></div>
+              <div class="bar"><span data-width="50"></span></div>
+            </div>
+          </article>
+
+          <article class="card edu-card reveal">
+            <div class="edu-head">
+              <div class="icon-box"><i class="fa-solid fa-school"></i></div>
+              <span class="chip chip-label chip-blue"><i class="fa-solid fa-check"></i> Concluído</span>
+            </div>
+            <div class="meta-row"><span class="label-caps">Educação Básica</span><span class="mono-muted">Concluído</span></div>
+            <h3>Ensino Médio</h3>
+            <p>Ensino médio completo.</p>
+          </article>
+        </div>
+
+        <div class="subsection" id="idiomas">
+          <h3 class="subsection-title reveal"><i class="fa-solid fa-language"></i> Idiomas</h3>
+          <div class="grid grid-2">
+            <article class="card lang-card reveal">
+              <div class="lang-head">
+                <img class="flag" src="https://flagcdn.com/w80/br.png" alt="Bandeira do Brasil" />
+                <div>
+                  <h3>Português</h3>
+                  <span class="label-caps">Nativo</span>
+                </div>
+                <span class="lang-percent">100%</span>
+              </div>
+              <div class="bar"><span data-width="100"></span></div>
+            </article>
+
+            <article class="card lang-card reveal">
+              <div class="lang-head">
+                <img class="flag" src="https://flagcdn.com/w80/us.png" alt="Bandeira dos Estados Unidos" />
+                <div>
+                  <h3>Inglês</h3>
+                  <span class="label-caps">Básico</span>
+                </div>
+                <span class="lang-percent">25%</span>
+              </div>
+              <div class="bar"><span data-width="25"></span></div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FRASE EM DESTAQUE -->
+    <div class="container">
+      <figure class="manifesto reveal">
+        <i class="fa-solid fa-quote-left" aria-hidden="true"></i>
+        <blockquote>O impossível é apenas uma questão de tempo... e de qual IA você está usando.</blockquote>
+        <figcaption class="label-caps">— Rodrigo Tricanico</figcaption>
+      </figure>
+    </div>
+
+    <!-- 7. PROJETOS -->
+    <section class="section" id="projetos">
+      <div class="container">
+        <div class="section-head reveal">
+          <div>
+            <span class="eyebrow">// Entregas</span>
+            <h2>Projetos</h2>
+          </div>
+          <p>Alguns trabalhos que desenvolvi.</p>
+        </div>
+
+        <div class="filters reveal" role="toolbar" aria-label="Filtrar projetos">
+          <span class="filters-prompt"><b>$</b> filtrar --categoria</span>
+          <button class="filter-btn active" data-filter="all">todos</button>
+          <button class="filter-btn" data-filter="web">web</button>
+          <button class="filter-btn" data-filter="mobile">mobile</button>
+          <button class="filter-btn" data-filter="dados">dados</button>
+        </div>
+
+        <div class="grid grid-3" id="projectsGrid">
+          <article class="card project-card reveal" data-category="web">
+            <div class="project-body">
+              <div class="project-head">
+                <span class="chip chip-label chip-cyan">Web</span>
+                <div class="icon-box icon-box-sm"><i class="fa-solid fa-cart-shopping"></i></div>
+              </div>
+              <h3>E-commerce Completo</h3>
+              <p>Loja virtual com carrinho, pagamento integrado e painel administrativo.</p>
+              <div class="tags"><span>React</span><span>Node.js</span><span>MongoDB</span></div>
+            </div>
+            <div class="project-foot">
+              <a href="#" class="link-ghost" target="_blank" rel="noopener"><i class="fa-brands fa-github"></i> código</a>
+              <a href="#" class="link-ghost" target="_blank" rel="noopener">demo <span class="arrow">-&gt;</span></a>
+            </div>
+          </article>
+
+          <article class="card project-card reveal" data-category="mobile">
+            <div class="project-body">
+              <div class="project-head">
+                <span class="chip chip-label chip-blue">Mobile</span>
+                <div class="icon-box icon-box-sm"><i class="fa-solid fa-mobile-screen-button"></i></div>
+              </div>
+              <h3>App de Finanças</h3>
+              <p>Aplicativo para controle de gastos pessoais com gráficos e metas mensais.</p>
+              <div class="tags"><span>React Native</span><span>Firebase</span></div>
+            </div>
+            <div class="project-foot">
+              <a href="#" class="link-ghost" target="_blank" rel="noopener"><i class="fa-brands fa-github"></i> código</a>
+              <a href="#" class="link-ghost" target="_blank" rel="noopener">demo <span class="arrow">-&gt;</span></a>
+            </div>
+          </article>
+
+          <article class="card project-card reveal" data-category="dados">
+            <div class="project-body">
+              <div class="project-head">
+                <span class="chip chip-label chip-indigo">Dados</span>
+                <div class="icon-box icon-box-sm"><i class="fa-solid fa-chart-line"></i></div>
+              </div>
+              <h3>Dashboard de Vendas</h3>
+              <p>Painel analítico com indicadores de desempenho e previsões de vendas.</p>
+              <div class="tags"><span>Python</span><span>Pandas</span><span>Power BI</span></div>
+            </div>
+            <div class="project-foot">
+              <a href="#" class="link-ghost" target="_blank" rel="noopener"><i class="fa-brands fa-github"></i> código</a>
+              <a href="#" class="link-ghost" target="_blank" rel="noopener">demo <span class="arrow">-&gt;</span></a>
+            </div>
+          </article>
+
+          <article class="card project-card reveal" data-category="web">
+            <div class="project-body">
+              <div class="project-head">
+                <span class="chip chip-label chip-cyan">Web</span>
+                <div class="icon-box icon-box-sm"><i class="fa-solid fa-id-card"></i></div>
+              </div>
+              <h3>Portfólio Pessoal</h3>
+              <p>Este currículo interativo, feito com HTML, CSS e JavaScript puro.</p>
+              <div class="tags"><span>HTML</span><span>CSS</span><span>JavaScript</span></div>
+            </div>
+            <div class="project-foot">
+              <a href="#" class="link-ghost" target="_blank" rel="noopener"><i class="fa-brands fa-github"></i> código</a>
+              <a href="#" class="link-ghost" target="_blank" rel="noopener">demo <span class="arrow">-&gt;</span></a>
+            </div>
+          </article>
+
+          <article class="card project-card reveal" data-category="dados">
+            <div class="project-body">
+              <div class="project-head">
+                <span class="chip chip-label chip-indigo">Dados</span>
+                <div class="icon-box icon-box-sm"><i class="fa-solid fa-robot"></i></div>
+              </div>
+              <h3>Chatbot com IA</h3>
+              <p>Assistente virtual para atendimento automatizado usando processamento de linguagem natural.</p>
+              <div class="tags"><span>Python</span><span>OpenAI</span><span>FastAPI</span></div>
+            </div>
+            <div class="project-foot">
+              <a href="#" class="link-ghost" target="_blank" rel="noopener"><i class="fa-brands fa-github"></i> código</a>
+              <a href="#" class="link-ghost" target="_blank" rel="noopener">demo <span class="arrow">-&gt;</span></a>
+            </div>
+          </article>
+
+          <article class="card project-card reveal" data-category="mobile">
+            <div class="project-body">
+              <div class="project-head">
+                <span class="chip chip-label chip-blue">Mobile</span>
+                <div class="icon-box icon-box-sm"><i class="fa-solid fa-dumbbell"></i></div>
+              </div>
+              <h3>App de Treinos</h3>
+              <p>Aplicativo com fichas de treino personalizadas e acompanhamento de evolução.</p>
+              <div class="tags"><span>Flutter</span><span>Dart</span><span>SQLite</span></div>
+            </div>
+            <div class="project-foot">
+              <a href="#" class="link-ghost" target="_blank" rel="noopener"><i class="fa-brands fa-github"></i> código</a>
+              <a href="#" class="link-ghost" target="_blank" rel="noopener">demo <span class="arrow">-&gt;</span></a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- 8. COMO FUNCIONA -->
+    <section class="section" id="como-funciona">
+      <div class="container">
+        <div class="section-head center reveal">
+          <span class="eyebrow">// Como funciona</span>
+          <h2>Do primeiro contato à entrega</h2>
+          <p>Um processo simples e direto.</p>
+        </div>
+
+        <ol class="steps">
+          <li class="card step reveal">
+            <span class="step-num">01</span>
+            <div class="icon-box"><i class="fa-solid fa-comments"></i></div>
+            <h3>Contato</h3>
+            <p>Você me chama pelo WhatsApp ou e-mail e conta o que precisa.</p>
+          </li>
+          <li class="card step reveal">
+            <span class="step-num">02</span>
+            <div class="icon-box"><i class="fa-solid fa-magnifying-glass-chart"></i></div>
+            <h3>Alinhamento</h3>
+            <p>Entendemos juntos o contexto, os objetivos e o formato ideal.</p>
+          </li>
+          <li class="card step reveal">
+            <span class="step-num">03</span>
+            <div class="icon-box"><i class="fa-solid fa-flag-checkered"></i></div>
+            <h3>Entrega</h3>
+            <p>Coloco experiência e método em prática, com foco em resultado.</p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- 9. PERGUNTAS FREQUENTES -->
+    <section class="section" id="faq">
+      <div class="container">
+        <div class="section-head center reveal">
+          <span class="eyebrow">// Perguntas frequentes</span>
+          <h2>Dúvidas comuns</h2>
+          <p>Não encontrou sua resposta? É só mandar uma mensagem.</p>
+        </div>
+
+        <div class="faq">
+          <details class="faq-item reveal">
+            <summary>Sobre quais assuntos posso entrar em contato?</summary>
+            <p>Oportunidades, parcerias, treinamentos ou para trocar ideias sobre segurança pública, educação e tecnologia.</p>
+          </details>
+          <details class="faq-item reveal">
+            <summary>Qual a melhor forma de falar com você?</summary>
+            <p>Pelo WhatsApp <a href="https://wa.me/5511972302899" target="_blank" rel="noopener">(11) 97230-2899</a> ou pelo e-mail <a href="mailto:rodtricanico@hotmail.com">rodtricanico@hotmail.com</a>.</p>
+          </details>
+          <details class="faq-item reveal">
+            <summary>Qual a sua formação em tecnologia?</summary>
+            <p>Sou Tecnólogo em Cibersegurança pela Faculdade Anhanguera e pós-graduando em Estratégia e Desenvolvimento de Soluções de IA.</p>
+          </details>
+          <details class="faq-item reveal">
+            <summary>Onde você está localizado?</summary>
+            <p>Em Jundiaí, no estado de São Paulo.</p>
+          </details>
+          <details class="faq-item reveal">
+            <summary>Como obtenho o currículo em PDF?</summary>
+            <p>Clique em <strong>Baixar PDF</strong> no topo ou na seção de contato. A página gera automaticamente uma versão otimizada para impressão.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <!-- 10. CONTATO (CTA FINAL) -->
+    <section class="section" id="contato">
+      <div class="container">
+        <div class="panel cta-panel reveal">
+          <span class="eyebrow">// Contato</span>
+          <h2>Vamos conversar?</h2>
+          <p class="cta-text">
+            Entre em contato para oportunidades, parcerias ou para trocar ideias sobre
+            segurança pública, educação e tecnologia.
+          </p>
+
+          <div class="cta-actions">
+            <a href="https://wa.me/5511972302899" target="_blank" rel="noopener" class="btn btn-primary"><i class="fa-brands fa-whatsapp"></i> Chamar no WhatsApp</a>
+            <a href="mailto:rodtricanico@hotmail.com" class="btn btn-secondary"><i class="fa-solid fa-envelope"></i> Enviar e-mail</a>
+            <button class="btn btn-secondary js-print"><i class="fa-solid fa-file-arrow-down"></i> Baixar PDF</button>
+          </div>
+
+          <ul class="contact-strip">
+            <li>
+              <i class="fa-solid fa-location-dot"></i>
+              <div><span class="label-caps">Endereço</span><span class="value">Rua Professor João de Oliveira Sobrinho, nº 240 – Esplanada – Jundiaí/SP</span></div>
+            </li>
+            <li>
+              <i class="fa-solid fa-phone"></i>
+              <div><span class="label-caps">Telefone</span><a class="value" href="tel:+5511972302899">(11) 97230-2899</a></div>
+            </li>
+            <li>
+              <i class="fa-solid fa-envelope"></i>
+              <div><span class="label-caps">E-mail</span><a class="value" href="mailto:rodtricanico@hotmail.com">rodtricanico@hotmail.com</a></div>
+            </li>
+            <li>
+              <i class="fa-solid fa-building-shield"></i>
+              <div><span class="label-caps">E-mail funcional</span><a class="value" href="mailto:rodtricanico@sap.sp.gov.br">rodtricanico@sap.sp.gov.br</a></div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <p><strong>Rodrigo Tricanico</strong> <span class="mono-muted">// Currículo</span></p>
+        <p class="footer-copy">&copy; <span id="year"></span> Rodrigo Donizetti Tricanico. Feito com <i class="fa-solid fa-heart"></i> e muito café.</p>
+      </div>
+      <nav class="footer-links" aria-label="Links do rodapé">
+        <a href="#servicos">Como ajudo</a>
+        <a href="#sobre">Sobre</a>
+        <a href="#experiencia">Trajetória</a>
+        <a href="#formacao">Formação</a>
+        <a href="#projetos">Projetos</a>
+        <a href="#faq">FAQ</a>
+        <a href="#contato">Contato</a>
+      </nav>
+      <div class="footer-meta">
+        <span class="footer-status"><span class="pulse-dot"></span> Disponível para contato</span>
+        <div class="socials">
+          <a href="https://linkedin.com/" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+          <a href="https://github.com/" target="_blank" rel="noopener" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+          <a href="mailto:rodtricanico@hotmail.com" aria-label="E-mail"><i class="fa-solid fa-envelope"></i></a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <a href="https://wa.me/5511972302899" target="_blank" rel="noopener" class="whatsapp-fab" aria-label="Conversar no WhatsApp">
+    <i class="fa-brands fa-whatsapp"></i>
+  </a>
+
+  <button class="back-to-top" id="backToTop" aria-label="Voltar ao topo">
+    <i class="fa-solid fa-arrow-up"></i>
+  </button>
+
+  <script src="script.js"></script>
+</body>
+</html>
