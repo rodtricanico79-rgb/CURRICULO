@@ -76,6 +76,47 @@ document.querySelectorAll(".reveal").forEach((el, i) => {
   observer.observe(el);
 });
 
+// ===== Tempo de serviço e duração dos cargos =====
+// Datas no formato "AAAA" ou "AAAA-MM"; sem data final, conta até o mês atual.
+const today = new Date();
+
+function parseMonth(value, fallbackMonth) {
+  const [year, month] = value.split("-").map(Number);
+  return { year, month: month || fallbackMonth };
+}
+
+function plural(n, singular, pluralForm) {
+  return `${n} ${n === 1 ? singular : pluralForm}`;
+}
+
+document.querySelectorAll("[data-years-since]").forEach((el) => {
+  el.textContent = today.getFullYear() - Number(el.dataset.yearsSince);
+});
+
+document.querySelectorAll("[data-duration-start]").forEach((el) => {
+  const { durationStart, durationEnd } = el.dataset;
+  const yearOnly = !durationStart.includes("-");
+
+  if (yearOnly) {
+    const endYear = durationEnd ? Number(durationEnd) : today.getFullYear();
+    el.textContent = plural(endYear - Number(durationStart), "ano", "anos");
+    return;
+  }
+
+  const start = parseMonth(durationStart, 1);
+  const end = durationEnd
+    ? parseMonth(durationEnd, 12)
+    : { year: today.getFullYear(), month: today.getMonth() + 1 };
+  const total = (end.year - start.year) * 12 + (end.month - start.month) + 1;
+  const years = Math.floor(total / 12);
+  const months = total % 12;
+
+  const parts = [];
+  if (years) parts.push(plural(years, "ano", "anos"));
+  if (months) parts.push(plural(months, "mês", "meses"));
+  el.textContent = parts.join(" e ");
+});
+
 // ===== Baixar PDF (impressão) e ano no rodapé =====
 document.querySelectorAll(".js-print").forEach((btn) => btn.addEventListener("click", () => window.print()));
 window.addEventListener("beforeprint", () => {

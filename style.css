@@ -737,6 +737,12 @@ h1, h2, h3 { font-family: var(--font-head); color: var(--text); }
   color: var(--secondary-light) !important;
 }
 .org i { font-size: 12px; opacity: 0.8; }
+.duration {
+  display: flex; align-items: center; gap: 8px; margin-top: 2px;
+  font-family: var(--font-mono); font-size: 12px !important; line-height: 18px;
+  color: var(--text-faint) !important;
+}
+.duration i { font-size: 11px; }
 .timeline-item.past .org { color: #93c5fd !important; }
 .timeline-item.past .icon-box { color: var(--primary); }
 
@@ -804,10 +810,6 @@ h1, h2, h3 { font-family: var(--font-head); color: var(--text); }
 .service-card .icon-box { margin-bottom: var(--space-sm); }
 .service-card > p { font-size: 14px; line-height: 22px; }
 .service-card .bullets { margin-top: var(--space-sm); font-size: 14px; line-height: 22px; }
-.service-link {
-  margin-top: auto; padding-top: var(--space-md);
-  border-top: 1px dashed var(--border);
-}
 
 /* =====================================================
    CTA INTERMEDIÁRIO
@@ -1025,7 +1027,8 @@ h1, h2, h3 { font-family: var(--font-head); color: var(--text); }
   .chip, .tags span { background: #f1f5f9; border-color: #e2e8f0; color: #334155; }
   .role, .org, .eyebrow, .meta-row .label-caps { color: #0e7490 !important; }
   .section { margin-top: 18px; padding-top: 0; }
-  .grid-2, .grid-3 { grid-template-columns: repeat(2, 1fr); }
+  .grid-2 { grid-template-columns: repeat(2, 1fr); }
+  .grid-3 { grid-template-columns: repeat(3, 1fr); }
   .bar span { box-shadow: none; }
   .footer { background: #fff; border-top-color: #e2e8f0; margin-top: 18px; }
   .footer .socials { display: none; }
